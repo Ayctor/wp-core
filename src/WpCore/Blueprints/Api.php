@@ -1,6 +1,6 @@
 <?php
 
-namespace Ayctor\Controllers;
+namespace Ayctor\Api;
 
 use WpCore\Controllers\ApiController;
 
