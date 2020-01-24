@@ -98,6 +98,16 @@ class BlueprintCommand extends \WP_CLI_Command
     ];
 
     /**
+     * Setup to create API controller
+     * @var array
+     */
+    protected $api = [
+        'blueprint' => __DIR__ . '/../Blueprints/Api.php',
+        'directory' => TEMPLATEPATH . '/app/Api/',
+        'label'     => 'API Controller'
+    ];
+
+    /**
      * Command to generate Model
      * @param  array $args Command arguments
      */
@@ -206,6 +216,17 @@ class BlueprintCommand extends \WP_CLI_Command
         list($name) = $args;
 
         $this->createFile($this->page, $name);
+    }
+
+    /**
+     * Command to generate API Controller
+     * @param  array $args Command arguments
+     */
+    public function api($args)
+    {
+        list($name) = $args;
+
+        $this->createFile($this->api, $name);
     }
 
     /**
