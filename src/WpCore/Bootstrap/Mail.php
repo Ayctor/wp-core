@@ -2,6 +2,8 @@
 
 namespace WpCore\Bootstrap;
 
+use \PHPMailer\PHPMailer\PHPMailer;
+
 /**
  * Class Mail for smtp parameters
  */
@@ -19,10 +21,10 @@ class Mail
 
     /**
      * Edit smtp parameters
-     * @param  \PHPMailer $mail PHPMailer instance
-     * @return \PHPMailer       Edited PHPMailer instance
+     * @param  PHPMailer $mail PHPMailer instance
+     * @return PHPMailer       Edited PHPMailer instance
      */
-    public function smptCredentials(\PHPMailer $mail)
+    public function smptCredentials(PHPMailer $mail)
     {
         $mail->IsSMTP();
         $mail->SMTPAuth = config('mail.username') && config('mail.password');
