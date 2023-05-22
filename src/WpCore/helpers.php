@@ -6,7 +6,7 @@ use Dotenv\Exception\InvalidPathException;
 
 // Load Dotenv
 try {
-    $dotenv = Dotenv::create(TEMPLATEPATH);
+    $dotenv = Dotenv::createImmutable(TEMPLATEPATH);
     $dotenv->load();
 } catch (InvalidPathException $e) {
     //
