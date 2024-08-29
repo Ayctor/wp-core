@@ -23,7 +23,7 @@
         "illuminate/view": "^10.11.0",
         "mikehaertl/phpwkhtmltopdf": "^2.5.0",
         "mmucklo/inflect": "^0.3.0",
-        "phpoffice/phpspreadsheet": "^1.28.0",
+        "phpoffice/phpspreadsheet": "^2.2.1",
         "symfony/var-dumper": "^6.2.0",
         "tgmpa/tgm-plugin-activation": "^2.6.0",
         "vlucas/phpdotenv": "^5.5.0"
