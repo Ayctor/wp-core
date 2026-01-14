@@ -30,10 +30,10 @@ class Page
      */
     public function __construct()
     {
-    	if (function_exists('acf_add_options_page')) {
-    		acf_add_options_page($this->args);
-    	}
         add_action('acf/init', function(){
+            if (function_exists('acf_add_options_page')) {
+    		    acf_add_options_page($this->args);
+    	    }
             $this->register();
             $this->registerFieds();
         });
